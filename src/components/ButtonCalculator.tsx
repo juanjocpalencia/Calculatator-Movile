@@ -3,14 +3,14 @@ import { View, Text, TouchableOpacity } from 'react-native'
 import { style } from '../Theme/appTheme'
 
 interface Props {
-    Texto: string,
+    TextButton: string,
     Color?: string
     TextColor?: 'white' | 'black';
-    ancho?: boolean,
+    Width?: boolean,
     onTouch?:()=>void | void 
 }
 
-export const ButtonCalculator = ({ Texto, Color = '#333333', TextColor = 'white', ancho = false,onTouch }: Props) => {
+export const ButtonCalculator = ({ TextButton, Color = '#333333', TextColor = 'white', Width = false,onTouch }: Props) => {
     return (
         <TouchableOpacity
             onPress={onTouch}
@@ -18,12 +18,12 @@ export const ButtonCalculator = ({ Texto, Color = '#333333', TextColor = 'white'
             <View style={{
                 ...style.button,
                 backgroundColor: Color,
-                width: (ancho ? 180 : 80)
+                width: (Width ? 180 : 80)
             }}>
                 <Text style={{
                     ...style.textButton,
                     color: TextColor
-                }}>{Texto}</Text>
+                }}>{TextButton}</Text>
             </View>
         </TouchableOpacity>
     )
