@@ -1,7 +1,6 @@
 import React from 'react'
 import { View, Text, TouchableOpacity } from 'react-native'
 import { style } from '../Theme/appTheme'
-import { Colors } from 'react-native/Libraries/NewAppScreen'
 
 interface Props {
     Texto: string,
@@ -11,18 +10,18 @@ interface Props {
     onTouch?:()=>void | void 
 }
 
-export const BotonCalc = ({ Texto, Color = '#333333', TextColor = 'white', ancho = false,onTouch }: Props) => {
+export const ButtonCalculator = ({ Texto, Color = '#333333', TextColor = 'white', ancho = false,onTouch }: Props) => {
     return (
         <TouchableOpacity
             onPress={onTouch}
         >
             <View style={{
-                ...style.boton,
+                ...style.button,
                 backgroundColor: Color,
                 width: (ancho ? 180 : 80)
             }}>
                 <Text style={{
-                    ...style.botonTexto,
+                    ...style.textButton,
                     color: TextColor
                 }}>{Texto}</Text>
             </View>

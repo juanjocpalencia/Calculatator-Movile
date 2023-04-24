@@ -1,33 +1,33 @@
 import { StyleSheet } from "react-native";
 
 export const style= StyleSheet.create({
-    fondo:{
+    background:{
         flex: 1,
         backgroundColor:'black',
     },
-    calculadoraContainer:{
+    calculatorContainer:{
         flex:1,
         justifyContent:'flex-end',
         paddingHorizontal:20
     },
-    resultado:{
+    result:{
         color:'white',
         fontSize:60,
         textAlign:'right',
         
     },
-    resultadoTiny:{
+    resultTiny:{
         color:'rgba(255,255,255,0.5)',
         fontSize:30,
         textAlign:'right'
     },
-    fila:{
+    row:{
         flexDirection:'row',
         justifyContent:'center',
         marginBottom:18,
         paddingHorizontal:10,
     },
-    boton:{
+    button:{
         height:80,
         width:80,
         // backgroundColor:"#333333",
@@ -35,7 +35,7 @@ export const style= StyleSheet.create({
         justifyContent:'center',
         marginHorizontal:10
     },
-    botonTexto:{
+    textButton:{
         textAlign:'center',
         // color:'white',
         fontSize:30,
